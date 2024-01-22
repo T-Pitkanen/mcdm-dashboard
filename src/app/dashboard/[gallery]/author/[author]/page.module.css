@@ -9,7 +9,7 @@
 }
 
 .content {
-  margin-top: 10vh;
+  margin-top: 15vh;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -18,13 +18,24 @@
 .images {
 
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 4rem;
   background-color: white;
-  padding: 2rem;
+  padding: 3rem;
   border-radius: 30px;
   width: 70vw;
   min-height: 100vh;
+
+}
+
+.images p {
+  width: 100%;
+  color: black;
+}
+
+.images img {
+  object-fit: cover;
 }

@@ -18,7 +18,13 @@ export default async function Page() {
 
 	return (
 		<main className={`${styles.page} ${poppinsFont.className}`}>
-			<CombinedNav galleries={galleries} authors={authors} images={images} />
+			<div className={styles.content}>
+				{' '}
+				<CombinedNav galleries={galleries} authors={authors} images={images} />
+				<div className={styles.images}>
+					<p>IMAGES</p>
+				</div>
+			</div>
 		</main>
 	);
 }

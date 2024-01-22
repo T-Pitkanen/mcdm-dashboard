@@ -26,8 +26,8 @@ export default async function Page({ params }) {
 				<div className={styles.images}>
 					{images.map((image, index) => (
 						<Image
-							width={300}
-							height={300}
+							width={400}
+							height={400}
 							key={index}
 							src={image.path}
 							alt={image.description}
