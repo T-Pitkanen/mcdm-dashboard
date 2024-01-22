@@ -63,6 +63,10 @@
   color: #4c4c4c;
 }
 
+.sidenav p {
+  font-size: 1.25rem;
+}
+
 .sidenav button {
   min-width: 220px;
   background-color: transparent;
