@@ -15,6 +15,17 @@
   align-items: flex-start;
 }
 
+.imagesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 30px;
+  width: 70vw;
+  min-height: 100vh;
+}
+
 .images {
 
   display: flex;
@@ -23,17 +34,20 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 4rem;
-  background-color: white;
-  padding: 3rem;
-  border-radius: 30px;
-  width: 70vw;
-  min-height: 100vh;
+
+
 
 }
 
-.images p {
+.imagesContainer p {
   width: 100%;
-  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #383838;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.75rem;
 }
 
 .images img {
