@@ -1,0 +1,12 @@
+.navigation {
+    color : #fff;
+}
+
+.navigation .header {
+    background-color: red;
+    padding : 10px;
+}
+
+.navigation .links {
+    background-color: green;
+}

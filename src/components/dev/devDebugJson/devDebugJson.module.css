@@ -1,0 +1,41 @@
+/* 
+    Hvis container har active klasse "display´er"/viser vi content.
+    display: block;
+*/
+.container.active .content {
+    display: block;
+}
+
+.handle {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #111;
+    padding: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.handle:hover {
+    color: #fff;
+    background-color: #222;
+}
+
+.handle svg{ 
+    width : 20px;
+    height : 20px;
+    margin-right: 10px;
+}
+
+/* 
+    Hvis container ikke har active stadie viser vi ikke content.
+    display: none; 
+*/
+.content {
+    display: none;
+    padding: 10px;
+    background-color: #fff;
+    color: #000;
+    font-size: 11px;
+    overflow-x: auto;
+}

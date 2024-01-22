@@ -1,0 +1,30 @@
+.page {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+
+}
+
+.content {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.images {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 30px;
+  width: 70vw;
+  min-height: 100vh;
+}

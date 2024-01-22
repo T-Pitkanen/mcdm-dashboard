@@ -1,0 +1,29 @@
+.navBtn {
+    user-select: none;
+    background-color: cadetblue;
+    padding : 0 10px;
+}
+
+.navBtn:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.navBtn.active {
+    background-color: green;
+}
+
+.navBtn svg {
+    width : 30px;
+    height : 30px;
+}
+
+.navBtn a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    line-height: 60px;
+}

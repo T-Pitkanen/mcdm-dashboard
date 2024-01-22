@@ -1,0 +1,40 @@
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin : 100px auto;
+}
+
+
+.icons svg {
+    width : 50px;
+    height : 50px;
+};
+
+
+.container {
+
+    text-align: center;
+
+}
+
+.actionBar {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin : 20px auto;
+    gap: 1rem;
+    
+}
+
+.actionBar .btn{
+
+    padding : 20px;
+    color : var(--main-color);
+    border-radius: 10px;
+    background-color: var(--box-color);
+    cursor: pointer;
+}
