@@ -15,6 +15,7 @@ const nextConfig = {
   },
   images: {
     minimumCacheTTL: 0,
+    
     remotePatterns: [],
   },
 };

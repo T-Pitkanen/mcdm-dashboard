@@ -6,10 +6,10 @@ import {
 } from '@/lib/data.service';
 import styles from './page.module.css';
 import Image from 'next/image';
+import ImagesContainer from '@/components/dashboard/imagesContainer/imagesContainer';
 import CombinedNav from '@/components/dashboard/portfolioComb.js/portfolioComb';
 
 export default async function Page({ params }) {
-	// let fetchedAuthor = await fetchAuthorByNicUrl(params.author);
 	let authorName = decodeURIComponent(params.author);
 	const images = await fetchImagesForAuthor(authorName);
 	let galleries = await fetchGalleries();
@@ -19,10 +19,10 @@ export default async function Page({ params }) {
 
 	return (
 		<main className={styles.page}>
-			{/* <p>Author Page - {authorName} </p> */}
 			<div className={styles.content}>
 				{' '}
 				<CombinedNav galleries={galleries} authors={authors} />
+				{/* <ImagesContainer images={images} authorName={authorName} /> */}
 				<div className={styles.imagesContainer}>
 					<p>{authorName}</p>
 					<div className={styles.images}>

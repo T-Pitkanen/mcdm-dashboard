@@ -6,7 +6,7 @@ const Portfolio = ({}) => {
 			<CombinedNav
 				galleries={galleries}
 				authors={authors}
-				onAuthorSelect={setSelectedAuthor} // Passing the function to set selected author
+				onAuthorSelect={setSelectedAuthor}
 				images={images}
 			/>
 		</main>

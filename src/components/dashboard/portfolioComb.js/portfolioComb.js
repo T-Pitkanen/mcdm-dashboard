@@ -1,23 +1,14 @@
 'use client';
 
-// import { usePathname, useSearchParams } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import styles from './portfolioComb.module.css';
 import Link from 'next/link';
 
 const CombinedNav = ({ galleries, authors }) => {
-	// const pathname = usePathname();
-	// const [searchParams, setSearchParams] = useSearchParams();
 	const [selectedGallery, setSelectedGallery] = useState(null);
 	const [selectedAuthor, setSelectedAuthor] = useState(null);
 
-	/*
-	useEffect(() => {
-		console.log('Authors:', authors);
-	}, [authors]); */
-
 	const handleGalleryClick = (galleryName) => {
-		// console.log('Gallery:', galleryName);
 		setSelectedGallery(galleryName);
 		setSelectedAuthor(null);
 	};
@@ -25,13 +16,10 @@ const CombinedNav = ({ galleries, authors }) => {
 	const filteredAuthors = selectedGallery
 		? authors.filter((author) => {
 				const isMatch = author.gallery === selectedGallery;
-				// console.log(`Checking ${author.author}: ${isMatch}`);
+
 				return isMatch;
 		  })
 		: [];
-
-	// console.log('Selected gallery:', selectedGallery);
-	// console.log('Filtered authors:', filteredAuthors);
 
 	return (
 		<div className={styles.combinedNav}>

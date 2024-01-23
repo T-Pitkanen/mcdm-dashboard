@@ -1,0 +1,38 @@
+.imagesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: white;
+  padding: 3rem;
+  border-radius: 30px;
+  width: 70vw;
+  min-height: 100vh;
+}
+
+.images {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+
+
+
+}
+
+.imagesContainer p {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #383838;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.75rem;
+}
+
+.images img {
+  object-fit: cover;
+}
