@@ -42,8 +42,8 @@
 .imagesContainer p {
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
-  color: #383838;
+  font-weight: 600;
+  color: #454545;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,5 +51,5 @@
 }
 
 .images img {
-  object-fit: cover;
+  object-fit: contain;
 }
