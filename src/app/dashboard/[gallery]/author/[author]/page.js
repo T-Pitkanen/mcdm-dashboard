@@ -6,7 +6,7 @@ import {
 } from '@/lib/data.service';
 import styles from './page.module.css';
 import Image from 'next/image';
-import ImagesContainer from '@/components/dashboard/imagesContainer/imagesContainer';
+// import ImagesContainer from '@/components/dashboard/imagesContainer/imagesContainer';
 import CombinedNav from '@/components/dashboard/portfolioComb.js/portfolioComb';
 
 export default async function Page({ params }) {
@@ -15,21 +15,18 @@ export default async function Page({ params }) {
 	let galleries = await fetchGalleries();
 	const authors = await fetchAuthors();
 
-	console.log(authors);
-
 	return (
 		<main className={styles.page}>
 			<div className={styles.content}>
 				{' '}
 				<CombinedNav galleries={galleries} authors={authors} />
-				{/* <ImagesContainer images={images} authorName={authorName} /> */}
 				<div className={styles.imagesContainer}>
 					<p>{authorName}</p>
 					<div className={styles.images}>
 						{images.map((image, index) => (
 							<Image
-								width={400}
-								height={400}
+								width={500}
+								height={700}
 								key={index}
 								src={image.path}
 								alt={image.description}
