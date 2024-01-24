@@ -21,7 +21,7 @@ export default async function Page({ params }) {
 				<div className={styles.imagesContainer}>
 					<p>{authorName}</p>
 					<div className={styles.images}>
-						{images.map((image, index) => (
+						{images.map((image) => (
 							<Image
 								width={500}
 								height={500}

@@ -24,6 +24,7 @@
   border-radius: 20px;
   width: 70vw;
   min-height: 100vh;
+  box-shadow: 0px 0px 20px 10px rgb(0, 0, 0)
 }
 
 .images {
@@ -37,13 +38,14 @@
 
 
 
+
 }
 
 .imagesContainer p {
   width: 100%;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-  color: #454545;
+  color: #252525;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,4 +54,5 @@
 
 .images img {
   object-fit: contain;
+
 }
