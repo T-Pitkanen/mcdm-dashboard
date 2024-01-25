@@ -18,10 +18,10 @@ const DevSwiper = ({ images }) => {
 				className={styles.swiperContainer}
 				slides-per-view="1"
 				navigation="true"
-				scrollbar="true"
 				rewind="true"
 				longSwipes="true"
 				speed="1000"
+				scrollbar="true"
 			>
 				{images.map((image) => {
 					return (

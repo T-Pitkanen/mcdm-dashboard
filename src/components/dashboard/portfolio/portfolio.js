@@ -1,15 +1,45 @@
-import CombinedNav from '../portfolioComb.js/portfolioComb';
+/* WITHOUT BUTTON - ORIGINAL
+'use client';
 
-const Portfolio = ({}) => {
+import ImagesContainer from '../imagesContainer/imagesContainer';
+import DevSwiper from '@/components/dev/devSwiper/devSwiper';
+
+const Portfolio = ({ images, authorName }) => {
 	return (
-		<main className={`${styles.page} ${poppinsFont.className}`}>
-			<CombinedNav
-				galleries={galleries}
-				authors={authors}
-				onAuthorSelect={setSelectedAuthor}
-				images={images}
-			/>
-		</main>
+		<div>
+			{' '}
+			<ImagesContainer images={images} authorName={authorName} />
+			<DevSwiper images={images} />
+		</div>
+	);
+};
+
+export default Portfolio;  */
+
+'use client';
+
+import { useState } from 'react';
+import ImagesContainer from '../imagesContainer/imagesContainer';
+import DevSwiper from '@/components/dev/devSwiper/devSwiper';
+import styles from './portfolio.module.css';
+
+const Portfolio = ({ images, authorName }) => {
+	const [isSwiperVisible, setIsSwiperVisible] = useState(true);
+
+	return (
+		<div>
+			<button
+				className={styles.switchBtn}
+				onClick={() => setIsSwiperVisible(!isSwiperVisible)}
+			>
+				Switch
+			</button>
+			{isSwiperVisible ? (
+				<DevSwiper images={images} />
+			) : (
+				<ImagesContainer images={images} authorName={authorName} />
+			)}
+		</div>
 	);
 };
 
