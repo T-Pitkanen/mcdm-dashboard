@@ -1,0 +1,18 @@
+.swiperWrapper {
+
+  width: 75vw;
+  height: 100%;
+
+}
+
+.swiperContainer {
+  width: 100%;
+
+}
+
+.swiperImage {
+  width: 100%;
+  height: 80vh;
+  object-fit: contain;
+
+}

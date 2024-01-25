@@ -6,6 +6,7 @@ import {
 import styles from './page.module.css';
 import Image from 'next/image';
 import CombinedNav from '@/components/dashboard/portfolioComb.js/portfolioComb';
+import DevSwiper from '@/components/dev/devSwiper/devSwiper';
 
 export default async function Page({ params }) {
 	const authorName = decodeURIComponent(params.author);
@@ -18,7 +19,7 @@ export default async function Page({ params }) {
 			<div className={styles.content}>
 				{' '}
 				<CombinedNav galleries={galleries} authors={authors} />
-				<div className={styles.imagesContainer}>
+				{/* <div className={styles.imagesContainer}>
 					<p>{authorName}</p>
 					<div className={styles.images}>
 						{images.map((image) => (
@@ -31,7 +32,8 @@ export default async function Page({ params }) {
 							/>
 						))}
 					</div>
-				</div>
+				</div> */}
+				<DevSwiper images={images} />
 			</div>
 		</main>
 	);
