@@ -22,23 +22,6 @@ export default async function Page({ params }) {
 				{' '}
 				<CombinedNav galleries={galleries} authors={authors} />
 				<Portfolio images={images} authorName={authorName} />
-				
-				{/* <DevSwiper images={images} /> */}
-				{/* <ImagesContainer images={images} authorName={authorName} /> */}
-				{/* <div className={styles.imagesContainer}>
-					<p>{authorName}</p>
-					<div className={styles.images}>
-						{images.map((image) => (
-							<Image
-								width={500}
-								height={500}
-								key={image.path}
-								src={image.path}
-								alt={image.description}
-							/>
-						))}
-					</div>
-				</div> */}
 			</div>
 		</main>
 	);
